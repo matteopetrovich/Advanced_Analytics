@@ -367,8 +367,9 @@ ggplot() + geom_line(aes(x=perf.rf@x.values[[1]],y=perf.rf@y.values[[1]], col="R
 AUC.over <- data.frame(t(c(auc.log, auc.lasso, auc.ridge, auc.nn, auc.rf)))
 colnames(AUC.over) <- c('Logistic', 'Lasso', 'Ridge', 'Neural Network', 'Random Forest')
 
-AUC
-AUC.over
+#### AUC COMPARISON
+AUC  
+AUC.over  # with oversampling and trend variables
 
 
 
